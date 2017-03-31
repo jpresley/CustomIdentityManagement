@@ -1,4 +1,4 @@
-﻿using CustomIdentityTest.Models;
+using CustomIdentityManagement.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -7,7 +7,7 @@ using System;
 using System.Data.Entity;
 using System.Web;
 
-namespace CustomIdentityTest
+namespace CustomIdentityManagement
 {
     public class IdentityInitializer : DropCreateDatabaseIfModelChanges<ApplicationDbContext>
     {
