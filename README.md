@@ -9,7 +9,7 @@
 4. Open the IdentityInitializer.cs file and update the default admin email and password at the top of the class
 5. Add the following to the ConfigureAuth(IAppBuilder app) method of the App_Start/Startup.Auth.cs file below the other app settings.
 
-> app.CreatePerOwinContext<ApplicationRoleManager>(ApplicationRoleManager.Create);
+    app.CreatePerOwinContext<ApplicationRoleManager>(ApplicationRoleManager.Create);
 
 ## Initialization
 1. Ensure that the DefaultConnection in the web.config file is pointing to the desired database
