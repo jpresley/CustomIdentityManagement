@@ -21,6 +21,6 @@
 
 @if (Request.IsAuthenticated && User.IsInRole("Admin"))<br/>
 {<br/>
-<pre>     </pre>&lt;a href="@Url.Action("Index","UsersAdmin")"&g;Users Admin&lt;/a&gt;<br/>
-<pre>     </pre>&lt;a href="@Url.Action("Index","RolesAdmin")"&g;Rules Admin&lt;/a&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="@Url.Action("Index","UsersAdmin")"&g;Users Admin&lt;/a&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="@Url.Action("Index","RolesAdmin")"&g;Rules Admin&lt;/a&gt;<br/>
 }
