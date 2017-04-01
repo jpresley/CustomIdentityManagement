@@ -18,3 +18,9 @@
 ## Usage
 1. To manage users call the UsersAdmin index view (domain.com/UsersAdmin)
 2. To manage roles call the RolesAdmin index view (domain.com/RolesAdmin)
+
+@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{
+        &lt;a href="@Url.Action("Index","UsersAdmin")"&g;Users Admin&lt;/a&gt;
+        &lt;a href="@Url.Action("Index","RolesAdmin")"&g;Rules Admin&lt;/a&gt;
+}
